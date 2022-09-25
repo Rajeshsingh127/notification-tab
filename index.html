@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="notification-top">
+        <div class="nf-text-box">
+          <h2 class="nf-heading">Notifications</h2>
+          <span class="nf-count-box">3</span>
+        </div>
+        <span class="mk-read">Mark all as read</span>
+      </div>
+      <div>
+        <section class="nf-section">
+          <div>
+            <article class="nf-container nf-unread">
+              <div>
+                <a href="/">
+                  <div class="user-img-box">
+                    <img src="./assets/images/avatar-mark-webber.webp" />
+                  </div>
+                </a>
+              </div>
+
+              <div class="nf-main-content">
+                <p class="nf-text-light">
+                  <a href="/" class="u-nm-bold">Mark Webber</a>
+                  reacted to your recent post
+                  <a href="/" class="nf-text-post"
+                    >My first tournament today!</a
+                  >
+                  <span class="red-dot"></span>
+                </p>
+                <span class="nf-text-time">1m ago</span>
+              </div>
+            </article>
+          </div>
+
+          <div>
+            <article class="nf-container nf-unread">
+              <div>
+                <a href="/">
+                  <div class="user-img-box">
+                    <img src="./assets/images/avatar-angela-gray.webp" />
+                  </div>
+                </a>
+              </div>
+
+              <div class="nf-main-content">
+                <p class="nf-text-light">
+                  <a href="/" class="u-nm-bold">Angela Gray</a>
+                  followed you
+                  <span class="red-dot"></span>
+                </p>
+                <span class="nf-text-time">5m ago</span>
+              </div>
+            </article>
+          </div>
+
+          <div>
+            <article class="nf-container nf-unread">
+              <div>
+                <a href="/">
+                  <div class="user-img-box">
+                    <img src="./assets/images/avatar-jacob-thompson.webp" />
+                  </div>
+                </a>
+              </div>
+
+              <div class="nf-main-content">
+                <p class="nf-text-light">
+                  <a href="/" class="u-nm-bold">Jacob Thompson</a>
+                  has joined your group
+                  <a href="/" class="nf-text-gp">Chess Club</a>
+                  <span class="red-dot"></span>
+                </p>
+                <span class="nf-text-time">1day ago</span>
+              </div>
+            </article>
+          </div>
+
+          <div>
+            <article class="nf-container">
+              <div>
+                <a href="/">
+                  <div class="user-img-box">
+                    <img src="./assets/images/avatar-rizky-hasanuddin.webp" />
+                  </div>
+                </a>
+              </div>
+
+              <div class="nf-main-content">
+                <p class="nf-text-light">
+                  <a href="/" class="u-nm-bold">Rizky Hasanuddin</a>
+                  sent you a private message
+                  <span class="red-dot"></span>
+                </p>
+                <span class="nf-text-time">5 days ago</span>
+
+                <div class="nf-text-msg-container">
+                  <p class="nf-text-msg">
+                    Hello, thanks for setting up the Chess Club. I've been a
+                    member for a few weeks now and I'm already having a lots of
+                    fun and improving my game.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div>
+            <article class="nf-container">
+              <div>
+                <a href="/">
+                  <div class="user-img-box">
+                    <img src="./assets/images/avatar-kimberly-smith.webp" />
+                  </div>
+                </a>
+              </div>
+
+              <div class="nf-main-content">
+                <p class="nf-text-light">
+                  <a href="/" class="u-nm-bold">Kimberly Smith</a>
+                  commented on your picture
+                  <span class="red-dot"></span>
+                </p>
+                <span class="nf-text-time">1 week ago</span>
+              </div>
+
+              <div class="nf-post-img">
+                <img src="./assets/images/image-chess.webp" />
+              </div>
+            </article>
+          </div>
+
+          <div>
+            <article class="nf-container">
+              <div>
+                <a href="/">
+                  <div class="user-img-box">
+                    <img src="./assets/images/avatar-nathan-peterson.webp" />
+                  </div>
+                </a>
+              </div>
+
+              <div class="nf-main-content">
+                <p class="nf-text-light">
+                  <a href="/" class="u-nm-bold">Nathan Peterson</a>
+                  reacted to your recent post
+                  <a href="/" class="nf-text-post"
+                    >5 end-game strategies to increase your win rate</a
+                  >
+                  <span class="red-dot"></span>
+                </p>
+                <span class="nf-text-time">2 weeks ago</span>
+              </div>
+            </article>
+          </div>
+
+          <div>
+            <article class="nf-container">
+              <div>
+                <a href="/">
+                  <div class="user-img-box">
+                    <img src="./assets/images/avatar-anna-kim.webp" />
+                  </div>
+                </a>
+              </div>
+
+              <div class="nf-main-content">
+                <p class="nf-text-light">
+                  <a href="/" class="u-nm-bold">Anna Kim</a>
+                  left your group
+                  <a href="/" class="nf-text-gp">Chess Club</a>
+                  <span class="red-dot"></span>
+                </p>
+                <span class="nf-text-time">2 weeks ago</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
